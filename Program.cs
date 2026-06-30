@@ -8,7 +8,6 @@ using Google.Apis.Auth.OAuth2;
 
 class Program
 {
-    // Movie database - genre mapped to list of movies
     static Dictionary<string, List<string>> movieDatabase = new Dictionary<string, List<string>>()
     {
         { "comedy", new List<string> { "3 Idiots", "Hera Pheri", "Andaz Apna Apna", "Golmaal", "Welcome" } },
@@ -22,11 +21,10 @@ class Program
 
     static void Main(string[] args)
     {
-        // Path to your credentials file
         string credentialsPath = "credentials.json";
-        string projectId = "enduring-aria-501008-v6"; // your Google Cloud project ID
+        string projectId = "enduring-aria-501008-v6"; 
 
-        // Authenticate using the service account credentials
+       
         var credential = GoogleCredential.FromFile(credentialsPath);
         var sessionsClient = new SessionsClientBuilder
         {
@@ -60,7 +58,7 @@ class Program
             string detectedIntent = response.QueryResult.Intent.DisplayName;
             string botReply = response.QueryResult.FulfillmentText;
 
-            // Check if the detected intent matches a genre, and add a movie suggestion
+           
             string genre = ExtractGenre(detectedIntent);
 
             if (genre != null && movieDatabase.ContainsKey(genre))
