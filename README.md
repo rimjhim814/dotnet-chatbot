@@ -1,4 +1,10 @@
-# 🎬 MovieBot - .NET Chatbot with Dialogflow
+# 🎬 MovieBot<img width="1073" height="500" alt="Screenshot 2026-06-30 144112" src="https://github.com/user-attachments/assets/13804948-cf92-48c1-b977-b4e6dd862906" />
+<img width="1073" height="500" alt="Screenshot 2026-06-30 144112" src="https://github.com/user-attachments/assets/72db5332-5973-4685-ac73-c2f169848cc3" />
+
+
+https://github.com/user-attachments/assets/fa53a522-0554-4bb7-a4c5-ca609e3f4ffe
+
+
 
 A console-based chatbot built in C# that recommends movies by genre, using Google Dialogflow ES for natural language understanding.
 
